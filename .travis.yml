@@ -16,9 +16,9 @@ before_script:
   - curl -sSL https://get.docker.com/ubuntu/ | sudo sh
   - sudo sh -c 'echo DOCKER_OPTS="-H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock">>/etc/default/docker'
   - cat /etc/default/docker
-  - sudo sudo service docker restart
+  - sudo service docker restart
   - docker -v
-  - sudo docker run ubuntu echo hello world
+  - docker run ubuntu echo hello world
 
 
 script:
