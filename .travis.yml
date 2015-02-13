@@ -3,6 +3,9 @@ node_js:
   - 0.10.34
 env:
   - NODE_ENV=travis
+
+build_image: rohitghatol/Dashboard-Mean-Vanilla
+
 services:
   - mongodb
 
@@ -12,5 +15,5 @@ before_script:
 
 script:
   - grunt test
-build_image: dockerfile/nodejs
-commit_container: rohitghatol/Dashboard-Mean-Vanilla
+
+
