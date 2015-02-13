@@ -12,5 +12,5 @@ before_script:
 
 script:
   - grunt test
-
+build_image: dockerfile/nodejs
 commit_container: rohitghatol/Dashboard-Mean-Vanilla
