@@ -14,9 +14,7 @@ before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - curl -sSL https://get.docker.com/ubuntu/ | sudo sh
-  - sudo sh -c 'echo DOCKER_OPTS="-H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock">>/etc/default/docker'
-  - cat /etc/default/docker
-  - sudo service docker restart
+  - docker -d 
   - docker -v
   - docker run ubuntu echo hello world
 
