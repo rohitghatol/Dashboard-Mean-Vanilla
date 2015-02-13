@@ -13,4 +13,4 @@ before_script:
 script:
   - grunt test
 
-commit_container: rohitghatol/Dashboard-Mean-Vanilla
+commit_container: rohitghatol/Dashboard-Mean-Vanilla:latest
