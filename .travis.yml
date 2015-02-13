@@ -18,6 +18,7 @@ script:
   - grunt test
 
 after_script:
+  - echo $USERNAME
   - docker login -u $USERNAME -p $PASSWORD -e $EMAIL
   - docker build -t rohitghatol/dashboard-mean-vanilla .
   - docker push rohitghatol/dashboard-mean-vanilla
