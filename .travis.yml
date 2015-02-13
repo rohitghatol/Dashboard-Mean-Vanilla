@@ -5,3 +5,9 @@ env:
   - NODE_ENV=travis
 services:
   - mongodb
+
+before_script:
+  - mkdir -p shippable/testresults
+
+script:
+  - grunt test

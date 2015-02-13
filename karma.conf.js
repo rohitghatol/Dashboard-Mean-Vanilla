@@ -17,7 +17,7 @@ module.exports = function(config) {
 		// Test results reporter to use
 		// Possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
 		//reporters: ['progress'],
-		reporters: ['progress'],
+		reporters: ['progress','junit'],
 
 		// Web server port
 		port: 9876,
@@ -47,6 +47,11 @@ module.exports = function(config) {
 
 		// Continuous Integration mode
 		// If true, it capture browsers, run tests and exit
-		singleRun: true
+		singleRun: true,
+
+    junitReporter: {
+      outputFile: 'shippable/testresults/result.xml',
+      suite: ''
+    },
 	});
 };
