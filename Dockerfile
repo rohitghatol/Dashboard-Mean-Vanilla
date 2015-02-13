@@ -4,6 +4,13 @@ MAINTAINER Matthias Luebken, matthias@catalyst-zero.com
 
 WORKDIR /home/mean
 
+# PhantomJs Prerequistes
+RUN sudo apt-get update
+RUN sudo apt-get -y install build-essential chrpath libssl-dev libxft-dev
+
+RUN sudo apt-get -y install libfreetype6 libfreetype6-dev
+RUN sudo apt-get -y install libfontconfig1 libfontconfig1-dev
+
 # Install Mean.JS Prerequisites
 RUN npm install -g grunt-cli
 RUN npm install -g bower
