@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/dash-dev',
+	db: 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost')+ '/dash-dev',
 	app: {
 		title: 'Dash - Development Environment'
 	},
